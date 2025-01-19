@@ -34,23 +34,24 @@ project/ ├── controllers/ │ ├── hackerNewsController.js # Handles 
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
-2 Install dependencies
-npm install express socket.io axios sequelize mysql2
+2. Install dependencies
+-npm install express socket.io axios sequelize mysql2
 
-3 Configure the database
-# Update the config/dbConfig.js file with your database credentials if they differ from the default.
+3. Configure the database
+- Update the config/dbConfig.js file with your database credentials if they differ from the default.
 
-4 Initialize the database
-# The database tables will be automatically created upon running the application using Sequelize.
+4. Initialize the database
+- The database tables will be automatically created upon running the application using Sequelize.
 
-5 Start the server
+5. Start the server
 node app.js
 
-6 Access the application
-7 Open your browser and visit http://localhost:3000
+6. Access the application
+
+7. Open your browser and visit http://localhost:3000
 
 
-API Endpoints
+###API Endpoints
 
 -Fetch and Save Stories
 -Endpoint: /api/fetch-stories
@@ -61,7 +62,7 @@ API Endpoints
 -Method: GET
 -Description: Retrieves stories from the database.
 
-#WebSocket Integration
+###WebSocket Integration
 
 The WebSocket server broadcasts the latest stories in real-time to connected clients.
 
@@ -78,7 +79,7 @@ Edit
   }
 ]
 
-#Documentation
+###Documentation
 
 -Complete Source Code:
 -Available on GitHub.
@@ -86,11 +87,11 @@ Edit
 
 -Refer to the installation and setup steps above.
 
-#Usage Examples:
+###Usage Examples:
 
 -Example WebSocket integration is provided in views/index.html.
 
-#Troubleshooting
+###Troubleshooting
 
 -MySQL Connection Error:
 Ensure the MySQL server is running and credentials in dbConfig.js are correct.
