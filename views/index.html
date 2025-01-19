@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hacker News Stories</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <h1>Hacker News Stories</h1>
+    <ul id="stories"></ul>
+
+    <script>
+        const socket = io();
+        const storyList = document.getElementById('stories');
+
+        socket.on('recentStories', stories => {
+            storyList.innerHTML = '';
+            stories.forEach(story => {
+                const li = document.createElement('li');
+                li.textContent = `${story.title} - ${story.url}`;
+                storyList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+
+</html>
