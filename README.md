@@ -51,7 +51,7 @@ node app.js
 7. Open your browser and visit http://localhost:3000
 
 
-###API Endpoints
+### API Endpoints
 
 -Fetch and Save Stories
 -Endpoint: /api/fetch-stories
@@ -62,7 +62,7 @@ node app.js
 -Method: GET
 -Description: Retrieves stories from the database.
 
-###WebSocket Integration
+### WebSocket Integration
 
 The WebSocket server broadcasts the latest stories in real-time to connected clients.
 
@@ -79,7 +79,7 @@ Edit
   }
 ]
 
-###Documentation
+### Documentation
 
 -Complete Source Code:
 -Available on GitHub.
@@ -87,11 +87,11 @@ Edit
 
 -Refer to the installation and setup steps above.
 
-###Usage Examples:
+### Usage Examples:
 
 -Example WebSocket integration is provided in views/index.html.
 
-###Troubleshooting
+### Troubleshooting
 
 -MySQL Connection Error:
 Ensure the MySQL server is running and credentials in dbConfig.js are correct.
